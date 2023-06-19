@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Umbraco.Core Class Library",
+  "authors": [ "Shannon" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+    "Microsoft.Extensions.WebEncoders.Core": "1.0.0-rc1-final",
+    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-final"
+  },
+  "frameworks": {
+    "dnxcore50": {
+      "dependencies": {
+        "System.Reflection.Extensions": "4.0.0",
+        "System.Text.RegularExpressions":  "4.0.0" 
+      } 
+    },
+    "dnx46": { }
+  }
+}

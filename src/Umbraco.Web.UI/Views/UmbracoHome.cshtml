@@ -1,0 +1,31 @@
+﻿@using Umbraco.ViewModels
+@using Umbraco.Web;
+@inject UmbracoContext UmbracoContext
+@model dynamic
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+<hr/>
+<section>
+
+    <h1>@Model.Name</h1>
+
+    <p>@Model.Message</p>
+
+    @if (ViewBag.message != null)
+    {
+        <div class="alert alert-warning">
+            @ViewBag.message
+        </div>
+     }
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["message"]
+        </div>
+    }
+
+    @Html.Partial("~/Views/Partials/UmbracoForm.cshtml", new UmbracoFormTest())
+</section>
